@@ -1,12 +1,13 @@
-import './App.css';
-import Quotes from './components/quotes/Quotes'
+import NavBar from './components/NavBar/NavBar'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-     <h1>Wet Bat Travel</h1>
-     <Quotes/>
+    <Router>
+    <div className="container">
+      <NavBar/>
     </div>
+    </Router>
   );
 }
 
