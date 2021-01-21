@@ -6,6 +6,9 @@
     padding: 0;
 }
 
+body {
+    background:rgb(238, 238, 243);
+}
 .topnav {
     display:flex;
     flex-direction: row;
@@ -104,13 +107,9 @@
 .aside {
     display:flex;
     flex-direction: column;
-    height: 55rem; /* Full-height: remove this if you want "auto" height */
-    width: 9rem; /* Set the width of the sidebar */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgb(221, 221, 221); /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    height: 55rem; 
+    background-color: rgb(221, 221, 221); 
+    width:50rem;
 }
 
 .asidebutton {
@@ -150,10 +149,17 @@
     display:flex;
 }
 
+.dashboardcontainer {
+    display:flex;
+    flex-flow: column wrap;
+    flex-grow:1;
+    flex-shrink:1;
+}
+
 .dashboard {
     display:flex;
     justify-content: space-between;
-    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
     width:fit-content;
     height:25rem;
     background: linear-gradient(to right, #5bbfba 0%, #5f6caf 100%);
@@ -215,4 +221,60 @@
     margin:.6rem 2rem 0 .2rem;
     width:5rem;
     font-size:1.3rem;
+}
+
+.quickquotecontainer {
+    display:flex;
+    flex-flow:column wrap;
+    width:24rem;
+    margin:1.5rem;
+    background:white;
+    border-radius: .5rem;
+
+}
+.quickquoteform {
+    display:flex;
+    flex-flow:row wrap;
+}
+.quickquoteform input {
+    margin:.5rem;
+    width:45%;
+    padding: 0 .5rem 1.8rem 0;
+    border:none;
+    background: rgb(244, 244, 250);
+}
+
+.quickquotetitle {
+    display:flex;
+    justify-content:space-between;
+    font-family: 'Arimo', sans-serif;
+    font-size:1.3rem;
+    padding-top:.5rem;
+    padding-bottom: .5rem;
+    color:  #636fa8;
+    border-bottom: solid 1px rgb(236, 236, 236);
+}
+
+.fastforward {
+    font-size:1.6rem;
+    color:#5BBFBA;
+    margin-left:1rem;
+    margin-right:1rem;
+    padding-top:.5rem;
+}
+
+.quickquotesubmit {
+    background:#5BBFBA;
+    margin:.5rem;
+
+    border:none;
+    justify-content: center;
+    padding:.9rem;
+    border-radius:2rem;
+    width:45%;
+}
+
+.expandicon {
+    color:lightgrey;
+    justify-content: end;
 }
