@@ -10,7 +10,7 @@ function Maindashboard() {
             <div className="statscontainer">
                 <img className="officeimg" src={office} alt="office"/>
                 <div className="stats">
-                    <div className="newleadscontainer">
+                    <div className="newleadscontainersmall">
                         <div className="newleadsnum">101</div>
                         <div className="newleads">NEW LEADS</div>
                     </div>

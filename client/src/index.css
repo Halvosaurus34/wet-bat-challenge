@@ -151,15 +151,15 @@ body {
 
 .dashboardcontainer {
     display:flex;
-    flex-flow: column wrap;
-    flex-grow:1;
-    flex-shrink:1;
+    flex-flow: row wrap;
+    align-content:flex-start;
+    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .dashboard {
     display:flex;
-    justify-content: space-between;
-    margin: 1.5rem 1.5rem 0rem 1.5rem;
+    margin:1.5rem;
     width:fit-content;
     height:25rem;
     background: linear-gradient(to right, #5bbfba 0%, #5f6caf 100%);
@@ -226,15 +226,16 @@ body {
 .quickquotecontainer {
     display:flex;
     flex-flow:column wrap;
-    width:24rem;
-    margin:1.5rem;
+    width:33%;
+    margin: 0 .75rem .75rem 1.5rem;
     background:white;
-    border-radius: .5rem;
-
+    border-radius: .5rem;   
+    height:25rem;
 }
 .quickquoteform {
     display:flex;
     flex-flow:row wrap;
+    justify-content: space-evenly;
 }
 .quickquoteform input {
     margin:.5rem;
@@ -253,9 +254,11 @@ body {
     padding-bottom: .5rem;
     color:  #636fa8;
     border-bottom: solid 1px rgb(236, 236, 236);
+    height:3rem;
+
 }
 
-.fastforward {
+.fastforward, .envelope, .paperplane {
     font-size:1.6rem;
     color:#5BBFBA;
     margin-left:1rem;
@@ -266,7 +269,8 @@ body {
 .quickquotesubmit {
     background:#5BBFBA;
     margin:.5rem;
-
+    font-family: 'Arimo', sans-serif;
+    color:white;
     border:none;
     justify-content: center;
     padding:.9rem;
@@ -274,7 +278,241 @@ body {
     width:45%;
 }
 
-.expandicon {
+.expandicon, .sync ,.ellipsis {
     color:lightgrey;
     justify-content: end;
+    margin:.5rem 1rem 0 0;
 }
+
+.pendingquotescontainer {
+    display:flex;
+    flex-flow:row wrap;
+    width:33%;
+    background:white;
+    border-radius: .5rem;
+    height:25rem;
+    overflow:hidden;
+    margin: 0 .75rem .75rem .75rem;
+
+}
+
+.pendingquotesheader {
+    display:flex;
+    justify-content:space-between;
+    font-family: 'Arimo', sans-serif;
+    font-size:1.3rem;
+    padding-top:.5rem;
+    padding-bottom: .5rem;
+    color:  #636fa8;
+    border-bottom: solid 1px rgb(236, 236, 236);
+    width:100%;
+    height:3rem;
+
+}
+
+.spinner {
+    font-size:1.6rem;
+    color:#5BBFBA;
+    margin-left:1rem;
+    margin-right:1rem;
+    padding-top:.5rem;
+}
+
+.quotestable {
+    display:table;
+    margin:.5rem;
+    text-align: start;
+    font-family: 'Arimo', sans-serif;
+    width:100%;
+}
+
+th, td {
+  padding: 0.2rem;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+th {
+    text-align: left;
+}
+
+.newleadscontainer {
+    display:flex;
+    flex-flow:row wrap;
+    width:23%;
+    background:white;
+    border-radius: .5rem;
+    height:25rem;
+    overflow:hidden;
+    align-content: flex-start;
+    margin: 0 1.5rem .75rem .75rem;
+
+}
+
+.newleadsheader {
+    display:flex;
+    justify-content:space-between;
+    font-family: 'Arimo', sans-serif;
+    font-size:1.3rem;
+    padding-top:.5rem;
+    padding-bottom: .5rem;
+    color:  #636fa8;
+    border-bottom: solid 1px rgb(236, 236, 236);
+    width:100%;
+    height:3rem;
+}
+
+.listelement {
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    width:100%;
+    justify-content: space-between;
+    padding-bottom:.5rem;
+    padding-top:.5rem;
+    border-bottom: solid 1px rgb(236, 236, 236);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.listelement:hover{
+    background:  #b7bfe9;
+
+}
+
+.newleadslist {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.listelement div {
+    display:flex;
+    flex-direction: row;
+
+}
+
+.newleadsuser {
+    border: solid 1px lightgrey;
+    background: lightgrey;
+    width:2.3rem;
+    height:2.3rem;
+    border-radius:.8rem;
+    padding: .5rem .4rem .6rem .6rem;
+    color:black;
+    font-size: 1rem;
+    margin: 0rem .5rem 0 .3rem;
+}
+
+.comment {
+    font-size:2rem;
+    color:#5BBFBA;
+    margin-left:1rem;
+    margin-right:1rem;
+    padding-top:.5rem;
+
+}
+
+.populardestinationscontainer {
+    display:flex;
+    flex-flow:row wrap;
+    width:67.5%;
+    background:white;
+    border-radius: .5rem;
+    height:25rem;
+    overflow:hidden;
+    align-content: flex-start;
+    margin: .75rem .75rem .75rem 1.5rem;
+}
+
+.worldmap {
+    margin:2rem 0 0 2rem;
+    width:50%;
+    height:75%;
+}
+
+.popularlist {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    border-right:solid 1px lightgrey;
+    
+}
+
+.popularlistelement {
+    display: flex;
+    flex-direction: row;
+    height:3rem;
+    padding:1rem;
+    width:100%;
+    padding-bottom:.5rem;
+    padding-top:.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.popularlistelement p {
+    width:8rem
+}
+.popularlistelement div {
+    display: flex;
+    flex-direction: row;
+    align-self:center;
+
+}
+.popularlist {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:40%;
+}
+
+.popularbutton1 {
+    width:3rem;
+    height:.7rem;
+    align-self:center;
+    margin-left:2rem;
+    border:none;
+    background:#5BBFBA;
+    border-radius:.1rem;
+}
+
+.popularbutton2 {
+    width:8rem;
+    height:.7rem;
+    align-self:center;
+    margin-left:2rem;
+    border:none;
+    background:#E7F0C3;
+    border-radius:.1rem;
+}
+
+.popularbutton3 {
+    width:6rem;
+    height:.7rem;
+    align-self:center;
+    margin-left:2rem;
+    border:none;
+    background:#F0CF85;
+    border-radius:.1rem;
+}
+
+.popularbutton4 {
+    width:4rem;
+    height:.7rem;
+    align-self:center;
+    margin-left:2rem;
+    border:none;
+    background:#A4D4Ae;
+    border-radius:.1rem;
+}
+
+.popularbutton5 {
+    width:10rem;
+    height:.7rem;
+    align-self:center;
+    margin-left:2rem;
+    border:none;
+    background:#5F6CAF;
+    border-radius:.1rem;
+}
+
