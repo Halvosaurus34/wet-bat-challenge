@@ -11,10 +11,10 @@ db.authenticate()
     .catch(err=> console.log(err))
 
 const app = express();
-app.use(express.static("../client/build"));
+app.use(express.static("client/build"));
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/client/build/index.html');
+app.get('*', function (req, res) {
+  res.sendFile(__dirname + `/client/build/index.html`);
 });
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
