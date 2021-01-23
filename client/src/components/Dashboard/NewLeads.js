@@ -1,4 +1,4 @@
-import { FaEnvelope, FaExpandArrowsAlt, FaUser, FaCommentAlt } from 'react-icons/fa'
+import { FaEnvelope, FaExpandArrowsAlt, FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function NewLeads() {
@@ -10,46 +10,46 @@ function NewLeads() {
                 <li className="listelement">
                     <div>
                         <Link className="newleadsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="newleadsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="newleadsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="newleadsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="newleadsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                 </li>
 

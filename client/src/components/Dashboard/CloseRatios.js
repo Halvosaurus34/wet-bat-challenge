@@ -4,7 +4,7 @@ function CloseRatios() {
     return (
         <div className="closeratiocontainer">
             <header className="closeratioheader"><div><FaHandshake className="envelope" />  Close Ratios </div><FaEllipsisV className="ellipsis" /></header>
-            <img className="closeratioimg" src={closeRatio}></img>
+            <img className="closeratioimg" alt="closeratio" src={closeRatio}></img>
         </div>)
 }
 

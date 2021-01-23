@@ -1,10 +1,12 @@
+const { INTEGER } = require('sequelize')
 const Sequelize = require('sequelize')
 const db = require('../config/database')
 
 const Quotes = db.define('quotes', {
     id: {
         type: Sequelize.INTEGER,
-        primaryKey: true
+        primaryKey:true,
+        autoIncrement: true
     },
     full_name: {
         type: Sequelize.STRING
@@ -24,14 +26,17 @@ const Quotes = db.define('quotes', {
     departure_date: {
         type: Sequelize.DATE
     },
-    return_airport: {
-        type: Sequelize.STRING
-    },
     return_date: {
         type: Sequelize.DATE
     },
     optional_transport: {
         type: Sequelize.STRING
+    },
+    price: {
+        type: Sequelize.STRING
+    },
+    people: {
+        type: Sequelize.INTEGER
     }
 })
 

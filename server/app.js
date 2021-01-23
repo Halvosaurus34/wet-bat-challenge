@@ -13,7 +13,8 @@ db.authenticate()
 const app = express();
 
 app.get('/', (req, res) => res.send('INDEX'))
-
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 //Quotes routes
 app.use('/quotes', require('./routes/quotes'))
 

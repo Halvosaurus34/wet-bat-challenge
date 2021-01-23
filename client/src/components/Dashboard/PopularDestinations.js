@@ -8,41 +8,41 @@ function PopularDestinations() {
             <ul className="popularlist">
                 <li className="popularlistelement">
                     <div>
-                        <el>
+                        <span>
                             <p>Lorem ipsum dolor sit </p>
-                        </el>
+                        </span>
                         <button className="popularbutton1"></button>
                     </div>
                 </li>
                 <li className="popularlistelement">
                     <div>
-                        <el>
+                        <span>
                             <p>Lorem ipsum dolor sit </p>
-                        </el>
+                        </span>
                         <button className="popularbutton2"></button>
                     </div>
                 </li>
                 <li className="popularlistelement">
                     <div>
-                        <el>
+                        <span>
                             <p>Lorem ipsum dolor sit </p>
-                        </el>
+                        </span>
                         <button className="popularbutton3"></button>
                     </div>
                 </li>
                 <li className="popularlistelement">
                     <div>
-                        <el>
+                        <span>
                             <p>Lorem ipsum dolor sit </p>
-                        </el>
+                        </span>
                         <button className="popularbutton4"></button>
                     </div>
                 </li>
                 <li className="popularlistelement">
                     <div>
-                        <el>
+                        <span>
                             <p>Lorem ipsum dolor sit </p>
-                        </el>
+                        </span>
                         <button className="popularbutton5"></button>
                     </div>
                 </li>
@@ -50,7 +50,7 @@ function PopularDestinations() {
 
             </ul>
 
-            <img className="worldmap" src={worldMap}></img>
+            <img className="worldmap" src={worldMap} alt="worldmap"></img>
         </div>
     )
 }

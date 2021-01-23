@@ -1,9 +1,11 @@
-import React from 'react'
-import {FaSpinner, FaExpandArrowsAlt, FaSyncAlt} from 'react-icons/fa'
-function PendingQuotes() {
+import { FaSpinner, FaExpandArrowsAlt, FaSyncAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
+function PendingQuotes({ quotes }) {
+    // console.log("Context Quote...", quotes)
     return (
-        <div className="pendingquotescontainer">
-            <header className="pendingquotesheader"><div><FaSpinner className="spinner"/>Pending Quotes</div><div><FaSyncAlt className="sync"/><FaExpandArrowsAlt className="expandicon"/></div></header>
+        < div className="pendingquotescontainer" >
+            <header className="pendingquotesheader"><div><FaSpinner className="spinner" /><Link to='/quotes' className="pendingquoteslink">Pending Quotes</Link></div><div><FaSyncAlt className="sync" /><FaExpandArrowsAlt className="expandicon" /></div></header>
             <table className="quotestable">
                 <thead>
                     <tr>
@@ -14,78 +16,18 @@ function PendingQuotes() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-
+                    {quotes.map((quote) => (
+                        <tr key={quote.id}>
+                            <td>{quote.id}</td>
+                            <td>{quote.full_name}</td>
+                            <td>{quote.destination}</td>
+                            <td>{quote.price}</td>
+                        </tr>
+                    ))
+                    }
                 </tbody>
             </table>
-        </div>
+        </div >
     )
 }
 

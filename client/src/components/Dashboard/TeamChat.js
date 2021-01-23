@@ -10,50 +10,50 @@ function TeamChat() {
                 <li className="listelement">
                     <div>
                         <Link className="teamchatsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                     <FaCommentAlt className="comment" />
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="teamchatsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                     <FaCommentAlt className="comment" />
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="teamchatsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                     <FaCommentAlt className="comment" />
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="teamchatsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                     <FaCommentAlt className="comment" />
                 </li>
                 <li className="listelement">
                     <div>
                         <Link className="teamchatsuser" to="/user"><FaUser /></Link>
-                        <el>
+                        <span>
                             <h4>Levi Halvorson</h4>
                             <p>blah blah blah</p>
-                        </el>
+                        </span>
                     </div>
                     <FaCommentAlt className="comment" />
                 </li>

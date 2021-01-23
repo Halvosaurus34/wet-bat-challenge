@@ -9,12 +9,12 @@ import Revenue from './Revenue'
 import PotentialRevenue from './PotentialRevenue'
 import CloseRatios from './CloseRatios'
 
-function Dashboard() {
+function Dashboard(props) {
     return (
         <div className="dashboardcontainer">
             <MainDashBoard/>
-            <Quickquote/>
-            <PendingQuotes/>
+            <Quickquote onAdd={props.onAdd}/>
+            <PendingQuotes quotes={props.quotes}/>
             <NewLeads/>
             <PopularDestinations/>
             <TeamChat/>
