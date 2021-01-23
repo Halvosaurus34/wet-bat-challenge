@@ -1,5 +1,6 @@
 ###Schema
-
+-- CREATE DATABASE wetbat_db;
+USE wetbat_db;
 CREATE TABLE quotes
 (
 	id int not null auto_increment,
