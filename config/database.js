@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-console.log("JAWSDB CONNECTION........", process.enc.JAWSDB_URL)
+console.log("JAWSDB CONNECTION........", process.env.JAWSDB_URL)
 
 if (process.env.JAWSDB_URL) {
   connection = new Sequelize(process.env.JAWSDB_URL)
