@@ -1,0 +1,1 @@
+insert into quotes (id, full_name, phone_number, user_address, departure_airport, destination, departure_date, return_date, optional_transport, price, people) values (1, "Levi Halvorson", "4038774423", "36 Anders St", "YYZ", "XYZ", "2021-01-20", "2021-01-28", null, "1000", 2); 
