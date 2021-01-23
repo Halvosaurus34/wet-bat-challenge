@@ -4,7 +4,6 @@ module.exports = new Sequelize('wetbat_db', 'root', 'KpkhcBk3PL4n', {
   host: 'localhost',
   dialect: 'mysql',
   
-
   pool: {
       max: 5,
       min: 0,

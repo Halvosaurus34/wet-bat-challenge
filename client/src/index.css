@@ -110,6 +110,9 @@ body {
     height: 55rem; 
     background-color: rgb(221, 221, 221); 
     width:fit-content;
+    position: -webkit-sticky;
+    position:sticky;
+    top:0;
 }
 
 .asidebutton {
@@ -120,7 +123,8 @@ body {
     color:  #5F6CAF;
     font-family: 'Arimo', sans-serif;
     font-size: .8rem;
-    width:max-content;
+    min-width: 9rem;
+    max-width: 20rem;    
 }
 .asidebutton:hover {
     background: #b7bfe9;
@@ -361,6 +365,10 @@ body {
 }
 .quotestable tr:hover {
     background:#f0f0f0;
+}
+
+.quotestable thead tr:first-child:hover {
+    background:white;
 }
 
 .quotestabel th, td {
@@ -727,5 +735,9 @@ body {
 
 .quotelist tr:hover {
     background:  #f0f0f0;
+    outline:none
+}
+.quotelist thead tr:first-child:hover {
+    background: white;
     outline:none
 }
