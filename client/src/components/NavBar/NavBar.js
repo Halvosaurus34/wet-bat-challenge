@@ -24,7 +24,8 @@ function NavBar() {
                 <Link className="chat toplink" to="/"><FaCommentAlt /></Link>
                 <Link className="settings toplink" to="/"><FaCog /></Link>
                 <Link className="user toplink" to="/"><FaUser /></Link>
-
+                <Link className='home' to="/">HOME</Link>
+                <Link className='quotes' to='/quotesPage'>QUOTES</Link>
             </div>
         </nav >
     )

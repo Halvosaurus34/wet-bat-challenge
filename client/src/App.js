@@ -73,7 +73,7 @@ function App() {
           <Route path="/" exact render={(props) => (
             <Dashboard quotes={quotes} onAdd={addQuote} />
           )} />
-          <Route path="/quotesPage" render={(props) => (
+          <Route path="/quotesPage" exact render={(props) => (
             <Quotes quotes={quotes} />
           )} />
 
