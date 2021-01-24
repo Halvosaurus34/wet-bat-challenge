@@ -40,7 +40,7 @@ function App() {
 
   //fetch quotes from db
   const fetchQuotes = async () => {
-    const res = await fetch('/quotesTable')
+    const res = await fetch('/quotes')
     const data = await res.json()
     return data
   }
@@ -48,7 +48,7 @@ function App() {
   //add quote to db 
   const addQuote = async (quote) => {
     console.log('Adding quote...', JSON.stringify(quote))
-    const res = await fetch('/quotesTable/add', {
+    const res = await fetch('/quotes/add', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'

@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 //Quotes routes
-app.use('/quotesTable', require('./routes/quotes'))
+app.use('/quotes', require('./routes/quotes'))
 console.log(path.join(__dirname, '/client/build/index.html'))
 const PORT = process.env.PORT || 5000
 

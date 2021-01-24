@@ -29,7 +29,7 @@ router.post('/add', (req,res) => {
         price: req.body.price,
         people: req.body.people
     })
-    .then(quote => res.redirect('/quotesTable'))
+    .then(quote => res.redirect('/quotes'))
     .catch(err => console.log(err))
 })
 
