@@ -5,7 +5,7 @@ function PendingQuotes({ quotes }) {
     // console.log("Context Quote...", quotes)
     return (
         < div className="pendingquotescontainer" >
-            <header className="pendingquotesheader"><div><FaSpinner className="spinner" /><Link to='/quotes' className="pendingquoteslink">Pending Quotes</Link></div><div><FaSyncAlt className="sync" /><FaExpandArrowsAlt className="expandicon" /></div></header>
+            <header className="pendingquotesheader"><div><FaSpinner className="spinner" /><Link to='/quotesPage' className="pendingquoteslink">Pending Quotes</Link></div><div><FaSyncAlt className="sync" /><FaExpandArrowsAlt className="expandicon" /></div></header>
             <table className="quotestable">
                 <thead>
                     <tr>
