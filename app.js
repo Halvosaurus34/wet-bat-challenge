@@ -14,13 +14,13 @@ const app = express();
 app.use(express.static("client/build"));
 
 app.get('/', function (req, res) {
-  res.sendFile(`./client/build/index.html`);
+  res.sendFile(path.join(__dirname, `/client/build/index.html`));
 });
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 //Quotes routes
 app.use('/quotes', require('./routes/quotes'))
-
+console.log(path.join(__dirname, '/client/build/index.html'))
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`))
