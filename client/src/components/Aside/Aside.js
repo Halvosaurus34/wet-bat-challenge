@@ -5,7 +5,7 @@ import {FaHome, FaDollarSign, FaListAlt, FaPaperPlane, FaStickyNote, FaChartLine
 const Aside = () => {
     return (
         <aside className="aside">
-            <Link className="asidebutton" to="/"><FaHome className="asideicon"/>  Home</Link>
+            <Link className="asidebutton" to="/"><FaHome className="asideicon"/> Home</Link>
             <Link className="asidebutton" to='/quotesPage'><FaDollarSign className="asideicon"/> Quotes</Link>
             <Link className="asidebutton" to="/"><FaListAlt className="asideicon"/> Leads</Link>
             <Link className="asidebutton tours" to="/"><FaPaperPlane className="asideicon"/> Tours</Link>

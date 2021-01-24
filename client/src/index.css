@@ -8,6 +8,7 @@
 
 body {
     background:rgb(238, 238, 243);
+    font-size:16px;
 }
 .topnav {
     display:flex;
@@ -16,13 +17,14 @@ body {
     align-items: center;
     background: #5F6CAF;
     height: 4rem;
+    width:auto;
 }
 
 .searchandlinks {
     display:flex;
     flex-direction: row;
     align-content:center;
-
+    
 }
 
 .search {
@@ -39,24 +41,11 @@ body {
     color:lightgrey;
   }
 
-.bell {
+.bell, .chat, .settings {
     color:#fff;
     font-size: 1rem;
     margin: .5rem 2rem 0 1rem;
 }
-
-.chat {
-    color:#fff;
-    font-size: 1rem;
-    margin: .5rem 2rem 0 1rem;
-}
-
-.settings {
-    color:#fff;
-    font-size: 1rem;
-    margin: .5rem 2rem 0 1rem
-}
-
 .user {
     border: solid 1px lightgrey;
     background: lightgrey;
@@ -109,7 +98,7 @@ body {
     flex-direction: column;
     height: 55rem; 
     background-color: rgb(221, 221, 221); 
-    width:fit-content;
+    width:auto;
     position: -webkit-sticky;
     position:sticky;
     top:0;
@@ -123,8 +112,6 @@ body {
     color:  #5F6CAF;
     font-family: 'Arimo', sans-serif;
     font-size: .8rem;
-    min-width: 9rem;
-    max-width: 20rem;    
 }
 .asidebutton:hover {
     background: #b7bfe9;
@@ -152,10 +139,13 @@ body {
 
 .container2 {
     display:flex;
+    flex-direction: row;
 }
 
 .dashboardcontainer {
-    display:flex;
+    display:grid;
+    grid-template-rows: 1fr;
+    gap:1.5rem;
     flex-flow: row wrap;
     align-content:flex-start;
     justify-content: space-evenly;
@@ -163,9 +153,8 @@ body {
 }
 
 .dashboard {
-    display:flex;
-    margin:1.5rem;
-    width:91.8%;
+    display:grid;
+    margin:1.5rem 1.5rem 0 1.5rem;
     height:25rem;
     background: linear-gradient(to right, #5bbfba 0%, #5f6caf 100%);
     border-radius: .5rem;
@@ -173,9 +162,28 @@ body {
     font-family: 'Arimo', sans-serif;
     height:fit-content;
 }
+.row2 {
+    display:grid;
+    grid-template-columns: 4fr 4fr 3fr;
+    gap:1.5rem;
+    margin:0 1.5rem;
+}
+.row3 {
+    display:grid;
+    grid-template-columns: 8fr 3fr;
+    gap:1.5rem;
+    margin:0 1.5rem;
+
+}
+.row4 {
+    display:grid;
+    grid-template-columns: 4fr 4fr 3fr;
+    gap:1.5rem;
+    margin:0 1.5rem 3rem 1.5rem;
+
+}
 
 .dashboardtext {
-    width:40%;
     margin: 1.5rem 0 0 1.5rem;
 }
 
@@ -224,15 +232,11 @@ body {
 .newleads, .quotescreated, .pendingorders{
     font-family: 'Arimo', sans-serif;
     margin:.6rem 2rem 0 .2rem;
-    width:5rem;
     font-size:1.3rem;
 }
 
 .quickquotecontainer {
-    display:flex;
-    flex-flow:column wrap;
-    width:33%;
-    margin: 0 .75rem .75rem 1.5rem;
+    display:grid;
     background:white;
     border-radius: .5rem;   
     height:25rem;
@@ -321,12 +325,10 @@ body {
     display:flex;
     flex-flow:row wrap;
     align-content: flex-start;
-    width:33%;
     background:white;
     border-radius: .5rem;
     height:25rem;
     overflow:hidden;
-    margin: 0 .75rem .75rem .75rem;
 
 }
 
@@ -384,13 +386,11 @@ body {
 .newleadscontainer {
     display:flex;
     flex-flow:row wrap;
-    width:23%;
     background:white;
     border-radius: .5rem;
     height:25rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: 0 1.5rem .75rem .75rem;
 
 }
 
@@ -461,13 +461,11 @@ body {
 .populardestinationscontainer {
     display:flex;
     flex-flow:row wrap;
-    width:67.5%;
     background:white;
     border-radius: .5rem;
     height:25rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: .75rem .75rem .75rem 1.5rem;
 }
 
 .worldmap {
@@ -569,13 +567,11 @@ body {
 .teamchatcontainer {
     display:flex;
     flex-flow:row wrap;
-    width:23%;
     background:white;
     border-radius: .5rem;
     height:25rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: .75rem 1.5rem .75rem .75rem;
 
 }
 
@@ -594,13 +590,11 @@ body {
 .revenuecontainer {
     display:flex;
     flex-flow:row wrap;
-    width:33%;
     background:white;
     border-radius: .5rem;
     height:15rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: .75rem .75rem 3rem 1.5rem;
 
 }
 
@@ -625,13 +619,11 @@ body {
 .potentialrevenuecontainer {
     display:flex;
     flex-flow:row wrap;
-    width:33%;
     background:white;
     border-radius: .5rem;
     height:15rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: .75rem .75rem 3rem .75rem;
 
 }
 
@@ -672,13 +664,11 @@ body {
 .closeratiocontainer {
     display:flex;
     flex-flow:row wrap;
-    width:23%;
     background:white;
     border-radius: .5rem;
     height:15rem;
     overflow:hidden;
     align-content: flex-start;
-    margin: .75rem .75rem 3rem .75rem;
 }
 
 .closeratioheader {
@@ -700,7 +690,7 @@ body {
 }
 
 .quotelistcontainer {
-    display:flex;
+    display:grid;
     flex-flow:row wrap;
     width:100%;
     background:white;
@@ -708,7 +698,7 @@ body {
     height:max-content;
     overflow:hidden;
     align-content: flex-start;
-    margin: 1.5rem 1.5rem 3rem 1.5rem;
+    margin:1.5rem;
 }
 
 .quotelistheader {
@@ -740,4 +730,82 @@ body {
 .quotelist thead tr:first-child:hover {
     background: white;
     outline:none
+}
+
+@media (max-width: 768px) {
+    .row2, .row3, .row4, .dashboardcontainer, .quotelistcontainer {
+        grid-template-columns: 1fr;
+    }
+    .topnav{
+        width:100%;
+    }
+    .aside {
+        flex-direction: row;
+        height:4rem;
+        display:hidden;
+    }
+    .asidebutton{
+        width:auto;
+    }
+    .copyright{
+        display:none;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .container{
+        display: grid;
+        width:auto;
+    }
+}
+@media(max-width:500px){
+    .row2, .row3, .row4, .dashboardcontainer, .quotelistcontainer {
+        grid-template-columns: 1fr;
+    }
+    .topnav{
+        width:100%;
+    }
+    .aside {
+        flex-direction: row;
+        height:4rem;
+        display:hidden;
+    }
+    .asidebutton{
+        width:auto;
+    }
+    .copyright{
+        display:none;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .container{
+        display: grid;
+        width:auto;
+    }
+    .dashboardparagraph {
+        font-size: 1.5rem;
+    }
+    .quickquotecontainer{
+        height:auto;
+    }
+    .quickquoteform{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .quickquoteform input, .quickquoteform select, .quickquotesubmit{
+        width:auto;
+        font-size:2.5rem;
+        height:6rem;
+    }
+    .topnav{
+        height:8rem;
+    }
+    .search, .logo2, .wetbat, .travel, .populardestinationscontainer, .newleadscontainer, .teamchatcontainer, .revenuecontainer, .potentialrevenuecontainer, .closeratiocontainer, .statscontainer, .aside{
+        display:none;
+    }
+    .logo{
+        height:5rem;
+        margin-left:3rem;
+    }
 }

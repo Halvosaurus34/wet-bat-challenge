@@ -12,15 +12,21 @@ import CloseRatios from './CloseRatios'
 function Dashboard(props) {
     return (
         <div className="dashboardcontainer">
-            <MainDashBoard/>
-            <Quickquote onAdd={props.onAdd}/>
-            <PendingQuotes quotes={props.quotes}/>
-            <NewLeads/>
-            <PopularDestinations/>
-            <TeamChat/>
-            <Revenue/>
-            <PotentialRevenue/>
-            <CloseRatios/>
+            <MainDashBoard />
+            <div className="row2">
+                <Quickquote onAdd={props.onAdd} />
+                <PendingQuotes quotes={props.quotes} />
+                <NewLeads />
+            </div>
+            <div className="row3">
+                <PopularDestinations />
+                <TeamChat />
+            </div>
+            <div className="row4">
+                <Revenue />
+                <PotentialRevenue />
+                <CloseRatios />
+            </div>
         </div>
     )
 }

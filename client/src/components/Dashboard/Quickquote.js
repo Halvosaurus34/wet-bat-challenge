@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { FaFastForward, FaExpandArrowsAlt } from 'react-icons/fa'
 function Quickquote(props) {
 
@@ -12,11 +12,11 @@ function Quickquote(props) {
 
     function handleClick(event) {
         event.preventDefault()
-        if(!from || !destination || !departDate || !returnDate || !people || !name){
+        if (!from || !destination || !departDate || !returnDate || !people || !name) {
             alert('Please fill out all fields')
             return
         }
-        
+
         props.onAdd({
             departure_airport: from,
             destination: destination,
@@ -25,7 +25,7 @@ function Quickquote(props) {
             people: people,
             optional_transport: transportation,
             full_name: name,
-            phone_number:"403-877-4423",
+            phone_number: "403-877-4423",
             user_address: "36 Anders St",
             price: "1000"
         })
@@ -37,8 +37,6 @@ function Quickquote(props) {
         setPeople('')
         setTransportation('')
         setName('')
-
-        
     }
     return (
         <div className="quickquotecontainer">
@@ -46,7 +44,7 @@ function Quickquote(props) {
             <form className="quickquoteform">
                 <input type="text" name="from" placeholder="FROM" value={from} onChange={(e) => {
                     setFrom(e.target.value)
-                }}/>
+                }} />
                 <input type="text" name="destination" placeholder="DESTINATION" value={destination} onChange={(e) => {
                     setDestination(e.target.value)
                 }} />
@@ -71,13 +69,13 @@ function Quickquote(props) {
                     <option value="null">No Transportation</option>
                     <option value="rentalCar">Rental Car</option>
                     <option value="shuttle">Shuttle</option>
-                </select>                
+                </select>
                 <input type="text" name="name" placeholder="NAME" value={name} onChange={(e) => {
                     setName(e.target.value)
                 }} />
 
                 <button type="submit" className="quickquotesubmit" onClick={handleClick}>Create a quote</button>
-            </form>      
+            </form>
         </div>
     )
 }
