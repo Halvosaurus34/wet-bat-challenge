@@ -795,8 +795,8 @@ body {
     }
     .quickquoteform input, .quickquoteform select, .quickquotesubmit{
         width:auto;
-        font-size:2.5rem;
-        height:6rem;
+        font-size:2rem;
+        height:4rem;
     }
     .topnav{
         height:8rem;

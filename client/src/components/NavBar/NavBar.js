@@ -21,9 +21,9 @@ function NavBar() {
                     <input type="search" className="search" placeholder="Search.."></input>
                 </form>
                 <Link className="bell toplink" to="/"><FaBell /></Link>
-                <Link className="chat toplink" to="/chat"><FaCommentAlt /></Link>
-                <Link className="settings toplink" to="/settings"><FaCog /></Link>
-                <Link className="user toplink" to="/user"><FaUser /></Link>
+                <Link className="chat toplink" to="/"><FaCommentAlt /></Link>
+                <Link className="settings toplink" to="/"><FaCog /></Link>
+                <Link className="user toplink" to="/"><FaUser /></Link>
 
             </div>
         </nav >
