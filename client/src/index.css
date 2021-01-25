@@ -747,6 +747,11 @@ body {
     .row2, .row3, .row4, .dashboardcontainer, .quotelistcontainer {
         grid-template-columns: 1fr;
     }
+    .dashboard{
+        display:grid;
+        grid-template-columns: 1fr;
+
+    }
     .topnav{
         width:100%;
     }
@@ -775,6 +780,7 @@ body {
     }
     .dashboard{
         height:30rem;
+
         overflow: auto;
     }
     .dashboardcontainer{
