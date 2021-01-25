@@ -33,4 +33,16 @@ router.post('/add', (req,res) => {
     .catch(err => console.log(err))
 })
 
+
+router.delete('/delete/:id', async (req,res) => {
+    console.log('delete response...', req.params)
+    // Insert into table
+    await Quotes.destroy({
+        where: {
+          id: req.params.id
+        }
+      });
+  
+})
+
 module.exports = router

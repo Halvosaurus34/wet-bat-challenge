@@ -1,13 +1,22 @@
 import './Quotes.css';
-import { FaPaperPlane, FaEllipsisV } from 'react-icons/fa'
+import { FaPaperPlane, FaEllipsisV, FaTrashAlt } from 'react-icons/fa'
 
-function Quotes({ quotes }) {
+function Quotes(props) {
+
+    //delete button function
+    function handleDelete(quote) {
+        console.log("Deleting Quote...", quote)
+        props.deleteQuote(quote)
+    }
+    //Full quote list
     return (
         <div className="quotelistcontainer">
             <header className="quotelistheader"><div><FaPaperPlane className="paperplane" />  Quotes </div><FaEllipsisV className="ellipsis" /></header>
             <table className="quotelist">
                 <thead>
                     <tr>
+                        <th></th>
+                        <th></th>
                         <th>ID #</th>
                         <th>NAME</th>
                         <th>PHONE NUMBER</th>
@@ -22,8 +31,9 @@ function Quotes({ quotes }) {
                     </tr>
                 </thead>
                 <tbody>
-                    {quotes.map((quote) => (
+                    {props.quotes.map((quote) => (
                         <tr key={quote.id}>
+                            <td onClick={() => handleDelete(quote)}><FaTrashAlt className="trash"/></td>
                             <td>{quote.id}</td>
                             <td>{quote.full_name}</td>
                             <td>{quote.phone_number}</td>
@@ -35,6 +45,7 @@ function Quotes({ quotes }) {
                             <td>{quote.optional_transport ? quote.optional_transport : "None selected"}</td>
                             <td>{quote.people}</td>
                             <td>{quote.price}</td>
+                            
                         </tr>
                     ))}
                 </tbody>

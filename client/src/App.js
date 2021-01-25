@@ -8,7 +8,8 @@ import Dashboard from './components/Dashboard/Dashboard'
 
 export const ACTIONS = {
   ADD_QUOTE: "addQuote",
-  FETCH_QUOTES: "getQuotes"
+  FETCH_QUOTES: "getQuotes",
+  DELETE_QUOTE: "deleteQuote"
 }
 
 function reducer(quotes, action) {
@@ -62,6 +63,18 @@ function App() {
     dispatch({ type: ACTIONS.ADD_QUOTE, payload: newQuotes })
   }
 
+  const deleteQuote = async (quote) => {
+    console.log("Delete quote...", quote)
+    const res = await fetch(`/quotesTable/delete/${quote.id}`, {
+      method: 'DELETE',
+      body: quote.id
+    })
+    console.log(res)
+    const newData = fetchQuotes()
+    dispatch({ type: ACTIONS.FETCH_QUOTES, payload: newData })
+
+  }
+
   return (
     <Router>
 
@@ -74,7 +87,7 @@ function App() {
             <Dashboard quotes={quotes} onAdd={addQuote} />
           )} />
           <Route path="/quotesPage" exact render={(props) => (
-            <Quotes quotes={quotes} />
+            <Quotes quotes={quotes} deleteQuote={deleteQuote} />
           )} />
 
         </div>

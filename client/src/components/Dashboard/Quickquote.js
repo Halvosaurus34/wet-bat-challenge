@@ -2,13 +2,13 @@ import { useState } from 'react'
 import { FaFastForward, FaExpandArrowsAlt } from 'react-icons/fa'
 function Quickquote(props) {
 
-    const [from, setFrom] = useState()
-    const [destination, setDestination] = useState()
-    const [departDate, setDepartDate] = useState()
-    const [returnDate, setReturnDate] = useState()
+    const [from, setFrom] = useState("")
+    const [destination, setDestination] = useState("")
+    const [departDate, setDepartDate] = useState("")
+    const [returnDate, setReturnDate] = useState("")
     const [people, setPeople] = useState(1)
-    const [transportation, setTransportation] = useState()
-    const [name, setName] = useState()
+    const [transportation, setTransportation] = useState("")
+    const [name, setName] = useState("")
 
     function handleClick(event) {
         event.preventDefault()
