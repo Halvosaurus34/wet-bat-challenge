@@ -46,7 +46,7 @@ For additional questions please reach out to me at: lhalvorson34@gmail.com.
 
 ---
 
-[Wet Bat GitHub Repository](https://github.com/Halvosaurus34/Eat-Da-Burger)
+[Wet Bat GitHub Repository](https://github.com/Halvosaurus34/wet-bat-challenge)
 
 ---
 
