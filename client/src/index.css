@@ -109,6 +109,7 @@ body {
     position: -webkit-sticky;
     position:sticky;
     top:0;
+    min-width:9rem;
 }
 
 .asidebutton {
@@ -816,13 +817,13 @@ body {
         height:3rem;
     }
     .topnav{
-        height:8rem;
+        height:5rem;
     }
     .search, .logo2, .wetbat, .travel, .populardestinationscontainer, .newleadscontainer, .teamchatcontainer, .revenuecontainer, .potentialrevenuecontainer, .closeratiocontainer, .statscontainer, .aside, .bell, .chat, .settings, .user, .searchicon{
         display:none;
     }
     .logo{
-        height:5rem;
+        height:3rem;
         margin-left:3rem;
     }
     .home, .quotes {
