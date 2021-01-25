@@ -1,4 +1,3 @@
-import './Quotes.css';
 import { FaPaperPlane, FaEllipsisV, FaTrashAlt } from 'react-icons/fa'
 
 function Quotes(props) {
@@ -15,7 +14,6 @@ function Quotes(props) {
             <table className="quotelist">
                 <thead>
                     <tr>
-                        <th></th>
                         <th></th>
                         <th>ID #</th>
                         <th>NAME</th>

@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg "License Badge")
 
-Wet Bat Travel is a coding challenge where I was tasked to make a travel website with a strong fontend and backend. There is a main page with components to view and add quotes to the database.  If you click on 'Pending Quotes' or 'Quotes' it will route to the full quotes page where you can view and delete quotes.  I learned so many things from this fun project.  I can now structure my react better, connect mySQL to react and I am so much better at CSS than I was before I started this project.
+Wet Bat Travel is a coding challenge where I was tasked to make a travel website with a strong fontend and backend. There is a main page with components to view and add quotes to the database.  If you click on 'Pending Quotes' or 'Quotes' it will route to the full quotes page where you can view and delete quotes.  I learned so many things from this fun project.  I can now structure my React code better, connect mySQL to React and I am so much better at CSS than I was before I started this project.
 
 ## ✈️ Getting started
 
@@ -26,7 +26,7 @@ I started the project by making a github repository. Next I set up mySQL through
 
 1. The database needs to be more complex to handle all the requests and different kinds of data
 2. Add user authentication
-3. Add a search functionality to teh webpage
+3. Add a search functionality to the webpage
 4. Add tour database
 5. Add invoicing 
 
